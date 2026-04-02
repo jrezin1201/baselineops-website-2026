@@ -114,7 +114,59 @@ export default function ServicesPage() {
         </Section>
       ))}
 
-      <Section className={services.length % 2 === 0 ? "" : "bg-white"}>
+      {/* Pricing signal */}
+      <Section className="bg-white">
+        <div className="text-center mb-12">
+          <SectionLabel>Investment</SectionLabel>
+          <SectionTitle>What to expect on investment</SectionTitle>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-3">
+          {[
+            {
+              tier: "Workflow Audit",
+              price: "Free",
+              desc: "We map your process and identify the highest-ROI automation opportunities.",
+              highlight: false,
+            },
+            {
+              tier: "Single Workflow Automation",
+              price: "Starting at $3,500",
+              desc: "One end-to-end automated workflow. Typical timeline: 2\u20133 weeks.",
+              highlight: true,
+            },
+            {
+              tier: "Full Operations Buildout",
+              price: "Starting at $8,000+",
+              desc: "Multiple connected workflows, custom tools, and ongoing optimization. Typical timeline: 4\u20138 weeks.",
+              highlight: false,
+            },
+          ].map((item) => (
+            <div
+              key={item.tier}
+              className={`rounded-xl border p-6 flex flex-col ${
+                item.highlight
+                  ? "border-accent/30 bg-accent/[0.02] ring-1 ring-accent/10"
+                  : "border-border bg-card"
+              }`}
+            >
+              <h3 className="text-base font-bold">{item.tier}</h3>
+              <p className="mt-2 text-2xl font-bold tracking-tight">
+                {item.price}
+              </p>
+              <p className="mt-3 text-sm text-muted flex-1">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <p className="mt-8 text-center text-sm text-muted">
+          Every engagement starts with a free workflow audit.
+          Pricing depends on complexity — we&apos;ll give you a fixed quote before any work begins.
+        </p>
+      </Section>
+
+      {/* CTA */}
+      <Section>
         <div className="text-center">
           <SectionTitle>Not sure where to start?</SectionTitle>
           <p className="mt-4 mx-auto max-w-lg text-lg text-muted">
