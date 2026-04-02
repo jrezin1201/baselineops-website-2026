@@ -28,7 +28,42 @@ export default function AboutPage() {
         </div>
       </Section>
 
+      {/* Founder bio */}
       <Section className="bg-white">
+        <div className="max-w-2xl mx-auto">
+          <SectionLabel>Who&apos;s behind Baseline Ops</SectionLabel>
+
+          <div className="mt-6 flex flex-col items-center sm:items-start sm:flex-row gap-8">
+            {/* Photo placeholder — replace with actual image later */}
+            <div
+              className="founder-photo h-[200px] w-[200px] shrink-0 rounded-full bg-zinc-200"
+              role="img"
+              aria-label="Jordan — Founder, Baseline Ops"
+            />
+
+            <div className="text-muted leading-relaxed space-y-4">
+              <p>
+                I&apos;m Jordan — an electrical engineer turned enterprise SaaS sales
+                professional turned automation builder.
+              </p>
+              <p>
+                I spent 5 years in hardware and embedded systems engineering, then 8+
+                years selling cybersecurity and IT infrastructure software to mid-market
+                and enterprise companies. I&apos;ve sat in hundreds of ops reviews where
+                the &ldquo;system&rdquo; was a spreadsheet someone built three years ago
+                that nobody fully understands.
+              </p>
+              <p>
+                Baseline Ops is what happens when you combine engineering chops with a
+                deep understanding of how growing businesses actually operate. I build
+                the automation systems your team has been asking for.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
         <div className="grid gap-16 lg:grid-cols-2">
           <div>
             <SectionLabel>Our approach</SectionLabel>
