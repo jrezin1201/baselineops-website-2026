@@ -39,18 +39,31 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Trust strip */}
-          <div className="mt-16 flex flex-col gap-6 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex flex-wrap items-center gap-x-8 gap-y-2 text-sm text-muted">
-              <span className="font-mono text-xs text-muted-light uppercase tracking-wider">Systems built for</span>
-              <span>Painting contractors</span>
-              <span>MSPs</span>
-              <span>General contractors</span>
-              <span>Growing SMBs</span>
-            </div>
-            <div className="flex items-center gap-6 text-xs text-muted-light font-mono">
-              <span>1000s of data points processed daily</span>
-            </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          SOCIAL PROOF STRIP
+      ══════════════════════════════════════════ */}
+      <section className="bg-surface border-b border-border">
+        <div className="mx-auto max-w-6xl px-6 py-8 text-center">
+          <p className="text-xs uppercase tracking-widest text-muted-light mb-5">
+            Built for teams handling real operational volume
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {[
+              "Contractors & Trades",
+              "MSPs & IT Providers",
+              "Growing SMBs",
+              "Operations Teams",
+            ].map((label) => (
+              <span
+                key={label}
+                className="rounded-full border border-border bg-white px-4 py-1.5 text-sm text-muted font-medium"
+              >
+                {label}
+              </span>
+            ))}
           </div>
         </div>
       </section>
