@@ -3,9 +3,15 @@ import { Section, SectionLabel, SectionTitle } from "@/components/section";
 import { Button } from "@/components/button";
 
 export const metadata: Metadata = {
-  title: "Example Engagements — Baseline Ops",
+  title: "Example Engagements — Real Automation Results | Baseline Ops",
   description:
-    "Representative projects based on real engagement patterns. See exactly how we automate contractor estimates, MSP reporting, and material ordering workflows.",
+    "See how we've automated contractor estimates, MSP reporting, and material ordering workflows. Before and after results included.",
+  openGraph: {
+    title: "Example Engagements — Real Automation Results | Baseline Ops",
+    description:
+      "See how we've automated contractor estimates, MSP reporting, and material ordering workflows. Before and after results included.",
+    type: "website",
+  },
 };
 
 const engagements = [

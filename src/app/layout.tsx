@@ -15,9 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Baseline Ops — Automation Consulting for Operations Teams",
+  title: "Baseline Ops — Workflow Automation for Contractors, MSPs & Operations Teams",
   description:
-    "We build custom automation systems that turn hours of manual Excel, PDF, and data entry work into minutes. Serving contractors, MSPs, and SMBs.",
+    "We build custom automation systems that eliminate manual data entry, spreadsheet workflows, and copy-paste processes. Free workflow audit.",
+  openGraph: {
+    title: "Baseline Ops — Workflow Automation for Contractors, MSPs & Operations Teams",
+    description:
+      "We build custom automation systems that eliminate manual data entry, spreadsheet workflows, and copy-paste processes. Free workflow audit.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

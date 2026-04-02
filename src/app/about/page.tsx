@@ -4,9 +4,15 @@ import { Card } from "@/components/card";
 import { Button } from "@/components/button";
 
 export const metadata: Metadata = {
-  title: "About — Baseline Ops",
+  title: "About Baseline Ops — Operators & Engineers Who Build Automation Systems",
   description:
-    "We're operators who build systems. Deep expertise in Excel, PDFs, and the messy reality of business workflows.",
+    "We're not Zapier, not a dev shop, not offshore labor. We're operators who build custom automation for growing businesses.",
+  openGraph: {
+    title: "About Baseline Ops — Operators & Engineers Who Build Automation Systems",
+    description:
+      "We're not Zapier, not a dev shop, not offshore labor. We're operators who build custom automation for growing businesses.",
+    type: "website",
+  },
 };
 
 export default function AboutPage() {

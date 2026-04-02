@@ -4,9 +4,15 @@ import { Card } from "@/components/card";
 import { Button } from "@/components/button";
 
 export const metadata: Metadata = {
-  title: "Services — Baseline Ops",
+  title: "Services — Workflow Automation, Data Processing & Custom Tools | Baseline Ops",
   description:
-    "Workflow automation, data processing, and custom internal tools. Built for messy real-world operations.",
+    "Custom-built automation for messy real-world workflows. We connect your Excel, PDFs, email, and databases into reliable automated systems.",
+  openGraph: {
+    title: "Services — Workflow Automation, Data Processing & Custom Tools | Baseline Ops",
+    description:
+      "Custom-built automation for messy real-world workflows. We connect your Excel, PDFs, email, and databases into reliable automated systems.",
+    type: "website",
+  },
 };
 
 const services = [
