@@ -53,6 +53,38 @@ export function ContactForm() {
         />
       </div>
       <div>
+        <label htmlFor="team-size" className="block text-sm font-medium mb-1.5">Team size</label>
+        <select
+          id="team-size" name="team-size" required
+          className="w-full rounded-lg border border-border px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-colors appearance-none"
+          defaultValue=""
+        >
+          <option value="" disabled>Select team size</option>
+          <option value="just-me">Just me</option>
+          <option value="2-5">2–5</option>
+          <option value="6-15">6–15</option>
+          <option value="16-50">16–50</option>
+          <option value="50+">50+</option>
+        </select>
+      </div>
+      <div>
+        <label htmlFor="manual-hours" className="block text-sm font-medium mb-1.5">
+          Hours/week your team spends on manual data work
+        </label>
+        <select
+          id="manual-hours" name="manual-hours" required
+          className="w-full rounded-lg border border-border px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-colors appearance-none"
+          defaultValue=""
+        >
+          <option value="" disabled>Select hours per week</option>
+          <option value="<5">Less than 5</option>
+          <option value="5-10">5–10</option>
+          <option value="10-20">10–20</option>
+          <option value="20-40">20–40</option>
+          <option value="40+">40+</option>
+        </select>
+      </div>
+      <div>
         <label htmlFor="message" className="block text-sm font-medium mb-1.5">
           What&apos;s the messiest workflow on your plate right now?
         </label>
