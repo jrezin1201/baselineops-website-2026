@@ -34,7 +34,7 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Button href="/#contact">Get Your Free Workflow Audit</Button>
               <Button href="/case-studies" variant="secondary">
-                See Client Results
+                See Example Engagements
               </Button>
             </div>
           </div>
@@ -274,7 +274,7 @@ export default function Home() {
       ══════════════════════════════════════════ */}
       <Section>
         <SectionLabel>Real systems we&apos;ve built</SectionLabel>
-        <SectionTitle>Not concepts. Not demos. Production systems.</SectionTitle>
+        <SectionTitle>What a typical engagement looks like</SectionTitle>
         <SectionDescription>
           Each one custom-built for a specific client&apos;s workflow. Here&apos;s what the output looks like.
         </SectionDescription>
@@ -328,7 +328,7 @@ export default function Home() {
         </div>
 
         <div className="mt-8 text-center">
-          <Button href="/case-studies" variant="secondary">Read full case studies</Button>
+          <Button href="/case-studies" variant="secondary">See all example engagements</Button>
         </div>
       </Section>
 

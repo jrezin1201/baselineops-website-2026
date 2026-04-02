@@ -24,7 +24,7 @@ export function Header() {
             href="/case-studies"
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
-            Case Studies
+            Example Engagements
           </Link>
           <Link
             href="/about"
@@ -68,7 +68,7 @@ export function Header() {
         <nav className="border-t border-border bg-white px-6 py-4 md:hidden">
           <div className="flex flex-col gap-4">
             <Link href="/services" className="text-sm text-muted hover:text-foreground" onClick={() => setMobileOpen(false)}>Services</Link>
-            <Link href="/case-studies" className="text-sm text-muted hover:text-foreground" onClick={() => setMobileOpen(false)}>Case Studies</Link>
+            <Link href="/case-studies" className="text-sm text-muted hover:text-foreground" onClick={() => setMobileOpen(false)}>Example Engagements</Link>
             <Link href="/about" className="text-sm text-muted hover:text-foreground" onClick={() => setMobileOpen(false)}>About</Link>
             <Link href="/#contact" className="rounded-lg bg-foreground px-4 py-2 text-center text-sm font-medium text-white" onClick={() => setMobileOpen(false)}>
               Get Your Automation Plan &rarr;

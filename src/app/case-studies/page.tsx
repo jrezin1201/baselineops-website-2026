@@ -3,12 +3,12 @@ import { Section, SectionLabel, SectionTitle } from "@/components/section";
 import { Button } from "@/components/button";
 
 export const metadata: Metadata = {
-  title: "Case Studies — Baseline Ops",
+  title: "Example Engagements — Baseline Ops",
   description:
-    "Real workflows automated. See exactly how we cut hours of manual work for contractors, MSPs, and operations teams.",
+    "Representative projects based on real engagement patterns. See exactly how we automate contractor estimates, MSP reporting, and material ordering workflows.",
 };
 
-const caseStudies = [
+const engagements = [
   {
     industry: "Painting Contractor",
     headline: "Bid time: 4 hours → 15 minutes",
@@ -29,7 +29,7 @@ const caseStudies = [
       { label: "Data entry errors", before: "3-4 per week", after: "Near zero" },
       { label: "Revenue capacity", before: "Capped", after: "3x increase" },
     ],
-    quote: "We went from turning down jobs because we couldn't estimate fast enough to bidding on everything that moves.",
+    outcome: "Typical outcome: estimating capacity triples without adding headcount, and bid accuracy improves dramatically — enabling the team to pursue significantly more revenue.",
   },
   {
     industry: "MSP / IT Service Provider",
@@ -51,7 +51,7 @@ const caseStudies = [
       { label: "Delivery consistency", before: "Sometimes late", after: "6am every Friday" },
       { label: "Technician time freed", before: "0 extra hours", after: "6 hours/week" },
     ],
-    quote: "Our clients started commenting on how consistent and detailed the reports were. They have no idea a human doesn't touch them.",
+    outcome: "Typical outcome: client-facing reports become more consistent and detailed than when produced manually, and a senior technician reclaims an entire afternoon each week for billable work.",
   },
   {
     industry: "General Contractor",
@@ -73,7 +73,7 @@ const caseStudies = [
       { label: "Missed deliveries", before: "Weekly", after: "Rare" },
       { label: "Admin time freed", before: "0 extra", after: "8+ hours/week" },
     ],
-    quote: "The foremen actually like using it because it's faster than texting. And we stopped getting calls about missing materials.",
+    outcome: "Typical outcome: field teams adopt the system immediately because it's faster than texting, ordering errors drop by 90%+, and the office manager reclaims 8+ hours per week.",
   },
 ];
 
@@ -83,18 +83,18 @@ export default function CaseStudiesPage() {
       <Section className="bg-grid relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white pointer-events-none" />
         <div className="relative max-w-2xl">
-          <SectionLabel>Case Studies</SectionLabel>
+          <SectionLabel>Example Engagements</SectionLabel>
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-            These aren&apos;t demos. These are production systems.
+            What a typical engagement looks like
           </h1>
           <p className="mt-6 text-lg text-muted">
-            Real workflows. Real clients. Real numbers. See exactly what we
-            built and the impact it had.
+            Representative projects based on real engagement patterns.
+            Names and details generalized for confidentiality.
           </p>
         </div>
       </Section>
 
-      {caseStudies.map((cs, i) => (
+      {engagements.map((cs, i) => (
         <Section key={cs.title} className={i % 2 === 0 ? "bg-white" : ""}>
           <div className="max-w-4xl mx-auto">
             <span className="text-[10px] font-bold uppercase tracking-widest text-accent">
@@ -105,7 +105,6 @@ export default function CaseStudiesPage() {
               {cs.title}
             </h2>
 
-            {/* Challenge */}
             <div className="mt-10">
               <h3 className="text-xs font-bold uppercase tracking-wider text-red-500 mb-3">
                 The Problem
@@ -113,7 +112,6 @@ export default function CaseStudiesPage() {
               <p className="text-muted leading-relaxed">{cs.challenge}</p>
             </div>
 
-            {/* Workflow */}
             <div className="mt-8">
               <h3 className="text-xs font-bold uppercase tracking-wider text-muted mb-3">
                 The Manual Workflow
@@ -130,7 +128,6 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
-            {/* Solution */}
             <div className="mt-8">
               <h3 className="text-xs font-bold uppercase tracking-wider text-accent mb-3">
                 What We Built
@@ -140,7 +137,6 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
-            {/* Results */}
             <div className="mt-8">
               <h3 className="text-xs font-bold uppercase tracking-wider text-green-600 mb-3">
                 Results
@@ -156,18 +152,16 @@ export default function CaseStudiesPage() {
               </div>
             </div>
 
-            {/* Quote */}
+            {/* Typical outcome — replaces fake client quote */}
             <div className="mt-8 rounded-lg bg-surface border border-border px-6 py-5">
-              <p className="text-sm italic text-muted">
-                &ldquo;{cs.quote}&rdquo;
-              </p>
+              <p className="text-xs font-bold uppercase tracking-wider text-muted-light mb-2">Typical Outcome</p>
+              <p className="text-sm italic text-muted">{cs.outcome}</p>
             </div>
           </div>
         </Section>
       ))}
 
-      {/* CTA */}
-      <Section className={caseStudies.length % 2 === 0 ? "" : "bg-white"}>
+      <Section className={engagements.length % 2 === 0 ? "" : "bg-white"}>
         <div className="text-center">
           <SectionTitle>Your workflow could look like this</SectionTitle>
           <p className="mt-4 mx-auto max-w-lg text-lg text-muted">
